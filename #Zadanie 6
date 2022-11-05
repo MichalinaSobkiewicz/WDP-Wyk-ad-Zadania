@@ -8,20 +8,10 @@ int main()
 	cout << "Podaj wartosc x= ";
 	cin >> x;
 
-	//zauważam, że kiedy a=0, równanie przyjmuje zwykłą formę równania kwadratowego
-	if (a == 0)
-	{
-		a = -5;
-		b = -3;
-		c = 2;
-		int rownanie2 = a * (x * x) + b * x + c;
-		cout << "B(x)= " << rownanie2 << endl;
-		return 0;
-
-	}
 
 	int rownanie1 = a * (x * x * x) + b * (x * x) + c * x + d;
-	cout << "A(x)= " << rownanie1;
-
+	int rownanie2 = a * (x * x) + b * x + c;
+	cout << "A(x)= " << rownanie1 << endl;
+	cout << "B(x)= " << rownanie2 << endl;
 	return 0;
 }
